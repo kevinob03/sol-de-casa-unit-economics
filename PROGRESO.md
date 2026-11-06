@@ -26,7 +26,8 @@
 
 ## Fases 4–6
 - [x] Fase 3 Nivel 1 implementada y verificada; el usuario indicó “siguiente” para avanzar a Fase 4 el 6 de noviembre de 2026.
-- [ ] Fase 5 requiere aprobación explícita tras revisar Fase 4.
+- [x] Revisión de Fase 4 y autorización para Fase 5: el usuario indicó “sigue” el 6 de noviembre de 2026.
+- [ ] Fase 6 requiere aprobación explícita tras revisar Fase 5.
 - [ ] Fase 6 no iniciada.
 
 ## Notas y límites
@@ -45,7 +46,7 @@ python C:\Users\HP8CV\.codex\skills\.system\skill-creator\scripts\quick_validate
 Skill is valid!
 ```
 
-**Próxima puerta:** revisión y aprobación de la Fase 4. No iniciar Fase 5 antes de esa aprobación explícita.
+**Próxima puerta:** revisión y aprobación de la Fase 5. No iniciar Fase 6 antes de esa aprobación explícita.
 
 ## Fase 3 — Modelo Nivel 1
 - [x] Autorización explícita para implementar la siguiente fase recibida el 6 de noviembre de 2026.
@@ -71,11 +72,31 @@ Skill is valid!
 - [x] Incluye escenarios actual, promesa de agencia, historial y propuesta propia; alertas de LTV:CAC y exceso de capacidad; reset a valores base.
 - [x] Paridad con XLSX en escenario actual: visitas 97,4875; ventas 22,31625; CAC real USD 620,59; LTV:CAC 2,6185×. Desviación calculada menor a 1 %.
 - [x] Pruebas de interacción en runtime simulado: paridad, embudos, capacidad de agencia, propuesta propia, inversión fuera de rango y reset pasaron.
-- [ ] Revisión/aprobación del usuario para Fase 4: pendiente.
+- [x] Creado y desplegado como sitio privado: https://sol-de-casa-unit-economics.rockypixie22.chatgpt.site (despliegue exitoso el 6 de noviembre de 2026).
+- [x] El usuario autorizó continuar a Fase 5 (“sigue”) el 6 de noviembre de 2026.
 
 ## Límites de Fase 4
 - El CPL fijo USD 8 es la promesa de la agencia, no el historial; ambos escenarios se mantienen separados.
 - La batería usa contribución esperada editable; valor de inicio 0 % mantiene la paridad base. La muestra histórica fue 15 % (3 de 20).
 - No se modelan tiempos de cobro/pago de batería ni caja mensual en este nivel.
-- La validación visual en navegador no se completó porque el host de navegador CUA no estaba disponible; el servidor local respondió HTTP 200 y pasaron las comprobaciones de cálculo e interacción.
-- No se inició Fase 5.
+- La validación visual en navegador no se completó porque el host de navegador CUA no estaba disponible; el servidor local respondió HTTP 200, el despliegue terminó correctamente y pasaron las comprobaciones de cálculo e interacción.
+- Fase 5 se inició con autorización; Fase 6 no se inició.
+
+## Fase 5 — Simulador de caja Nivel 3
+- [x] Autorización recibida el 6 de noviembre de 2026 (“sigue”).
+- [x] Ampliado el mismo dashboard local/privado de Fase 4 con una vista de caja a 24 meses, evitando crear una aplicación separada.
+- [x] Implementadas interpolación Meta/Google, asignación de Google primero, máximo dos técnicos, pago desde contratación y capacidad desde el mes siguiente, gastos fijos, flujos escalonados y piso de USD 5.000.
+- [x] Comparados cuatro planes: actual, agencia con historial observado, propuesta propia con mejora supuesta y propuesta propia más técnico contratado en el mes 1.
+- [x] Gráficos de caja frente al piso y visitas solicitadas/atendidas frente a capacidad; tabla mensual de 24 filas; alertas de caja y reglas desde mes 19.
+- [x] Mes 1 del plan actual conciliado a mano: visitas 97,4875; ventas nuevas 22,31625; entradas USD 144.027,81; salidas USD 140.291,51; caja final USD 15.736,30; diferencia independiente menor que USD 0,00000001.
+- [x] En las proyecciones fijas, el plan propio con técnico termina con caja de USD 403.631; su mínimo es la caja inicial de USD 12.000. El plan histórico de la agencia cae bajo el piso y queda marcado como no viable.
+- [x] Pruebas automáticas de las 24 filas, cuatro planes, conciliación del mes 1, capacidad diferida del técnico, alerta de piso, gráficas y pitch: pasaron.
+- [ ] Revisión/aprobación del usuario para Fase 5: pendiente.
+
+## Límites de Fase 5
+- La proyección mantiene inversiones mensuales fijas; desde el mes 19 se cumple la restricción de inversión no decreciente.
+- Las tasas mejoradas de Meta son un supuesto autorizado del caso, no una observación de Sol de Casa.
+- Las 22 ventas históricas del mes 0 se usan para los cobros e instalación del mes 1; las ventas nuevas se instalan/cobran la segunda mitad al mes siguiente.
+- No se incluye batería ni deuda en la caja por falta de calendario de cobro/pago y condiciones de crédito.
+- El ZIP no contenía el modelo de referencia del facilitador; la reproducción con tolerancia del 3 % no pudo compararse. No se afirma validación externa.
+- La vista ampliada comparte el mismo dashboard publicado de forma privada: https://sol-de-casa-unit-economics.rockypixie22.chatgpt.site
