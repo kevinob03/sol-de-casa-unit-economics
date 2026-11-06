@@ -22,19 +22,18 @@
 - [x] Añadido validador reproducible de Sol de Casa con 21 controles.
 - [x] Ejecutado el validador del ejemplo: **21 controles pasaron**.
 - [x] Ejecutado `quick_validate.py`: **Skill is valid!** (PyYAML se instaló solo bajo `%TEMP%` para esta comprobación; no se añadió dependencia al proyecto).
-- [ ] Revisión/aprobación del usuario para Fase 2: pendiente.
+- [x] Aprobación de Fase 2 registrada al autorizar la siguiente fase.
 
 ## Fases 4–6
 - [x] Fase 3 Nivel 1 implementada y verificada; el usuario indicó “siguiente” para avanzar a Fase 4 el 6 de noviembre de 2026.
 - [x] Revisión de Fase 4 y autorización para Fase 5: el usuario indicó “sigue” el 6 de noviembre de 2026.
-- [ ] Fase 6 requiere aprobación explícita tras revisar Fase 5.
-- [ ] Fase 6 no iniciada.
+- [x] Revisión de Fase 5 y autorización de Fase 6: el usuario indicó “contignua con la fase 6” el 6 de noviembre de 2026.
 
 ## Notas y límites
 - Fuentes originales revisadas desde `C:\Users\HP8CV\Downloads\Sol_de_Casa_Contexto_Completo_Codex_Antigravity.zip`; no se modificaron.
 - El plan técnico de Fase 1 deja CAC/LTV:CAC de la agencia pendientes en una tabla; los controles de esta skill reproducen las cifras del PDF y del contexto maestro.
 - E-commerce y suscripción tienen fórmulas y límites conceptuales; la prueba integral incluida es solo Sol de Casa (generación de leads).
-- Fase 3 se entregó como un único libro XLSX; Fase 4 agrega el dashboard bonus según el plan maestro.
+- Fase 3 se entregó como un libro XLSX; Fases 4 y 5 se integraron en una sola aplicación web.
 
 ## Evidencia de ejecución
 
@@ -46,7 +45,7 @@ python C:\Users\HP8CV\.codex\skills\.system\skill-creator\scripts\quick_validate
 Skill is valid!
 ```
 
-**Próxima puerta:** revisión y aprobación de la Fase 5. No iniciar Fase 6 antes de esa aprobación explícita.
+**Estado:** paquete final preparado para revisión. Una publicación nueva queda sujeta a autorización explícita; la aplicación vigente es privada.
 
 ## Fase 3 — Modelo Nivel 1
 - [x] Autorización explícita para implementar la siguiente fase recibida el 6 de noviembre de 2026.
@@ -62,7 +61,7 @@ Skill is valid!
 - El modelo no proyecta caja agregada; la contratación exige validar por separado el piso de caja de USD 5.000.
 - La mejora de Meta es un supuesto del caso, no un resultado observado.
 - El nuevo técnico cuesta USD 1.800/mes desde su contratación y aporta 50 visitas de capacidad desde el mes siguiente.
-- Fase 4 se inició con autorización del usuario; Fase 5 no se inició.
+- La proyección de caja se incorporó en Fase 5 y sus límites constan en su sección.
 
 ## Fase 4 — Dashboard Nivel 2
 - [x] Aprobación para continuar recibida el 6 de noviembre de 2026 (“siguiente”).
@@ -80,7 +79,7 @@ Skill is valid!
 - La batería usa contribución esperada editable; valor de inicio 0 % mantiene la paridad base. La muestra histórica fue 15 % (3 de 20).
 - No se modelan tiempos de cobro/pago de batería ni caja mensual en este nivel.
 - La validación visual en navegador no se completó porque el host de navegador CUA no estaba disponible; el servidor local respondió HTTP 200, el despliegue terminó correctamente y pasaron las comprobaciones de cálculo e interacción.
-- Fase 5 se inició con autorización; Fase 6 no se inició.
+- Fase 6 consolida el paquete y sus límites constan en su sección.
 
 ## Fase 5 — Simulador de caja Nivel 3
 - [x] Autorización recibida el 6 de noviembre de 2026 (“sigue”).
@@ -91,7 +90,8 @@ Skill is valid!
 - [x] Mes 1 del plan actual conciliado a mano: visitas 97,4875; ventas nuevas 22,31625; entradas USD 144.027,81; salidas USD 140.291,51; caja final USD 15.736,30; diferencia independiente menor que USD 0,00000001.
 - [x] En las proyecciones fijas, el plan propio con técnico termina con caja de USD 403.631; su mínimo es la caja inicial de USD 12.000. El plan histórico de la agencia cae bajo el piso y queda marcado como no viable.
 - [x] Pruebas automáticas de las 24 filas, cuatro planes, conciliación del mes 1, capacidad diferida del técnico, alerta de piso, gráficas y pitch: pasaron.
-- [ ] Revisión/aprobación del usuario para Fase 5: pendiente.
+- [x] Actualizada y publicada la misma aplicación estática privada; versión de Fase 5 desplegada correctamente el 6 de noviembre de 2026.
+- [x] El usuario autorizó continuar a Fase 6 (“contignua con la fase 6”) el 6 de noviembre de 2026.
 
 ## Límites de Fase 5
 - La proyección mantiene inversiones mensuales fijas; desde el mes 19 se cumple la restricción de inversión no decreciente.
@@ -100,3 +100,14 @@ Skill is valid!
 - No se incluye batería ni deuda en la caja por falta de calendario de cobro/pago y condiciones de crédito.
 - El ZIP no contenía el modelo de referencia del facilitador; la reproducción con tolerancia del 3 % no pudo compararse. No se afirma validación externa.
 - La vista ampliada comparte el mismo dashboard publicado de forma privada: https://sol-de-casa-unit-economics.rockypixie22.chatgpt.site
+
+## Fase 6 — Entrega final
+- [x] Creado README con estructura, instrucciones y enlaces a los entregables.
+- [x] Creada guía de uso del libro y del dashboard local/privado.
+- [x] Documentadas las fuentes, decisiones, pruebas ejecutadas y límites.
+- [x] Preparado guion oral de aproximadamente 3 minutos con cifras y riesgos trazables.
+- [x] Añadido validador reproducible sin dependencias externas para el dashboard y el simulador de caja.
+- [x] Creado `outputs/Sol_de_Casa_Entrega_Final.zip` con skill, libro, dashboard, documentación y evidencia.
+- [x] Validado el contenido del ZIP y ejecutados los validadores documentados.
+- [ ] Publicar una versión con documentación de Fase 6: pendiente de autorización expresa; el sitio privado vigente corresponde a Fase 5.
+- [ ] Revisión final del usuario: pendiente.
