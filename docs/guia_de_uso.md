@@ -10,6 +10,12 @@ La primera pestaña actualiza las métricas al cambiar un campo. Use los botones
 
 Los presupuestos históricos se interpolan en línea recta entre los puntos del Caso C. El rango permitido es Meta de USD 0 a 10.000 y Google de USD 0 a 8.000; fuera de esos rangos el modelo no extrapola. Google recibe visitas primero cuando la demanda supera la capacidad.
 
+## Ciclo de referidos — Sesión 2
+
+Abra la tercera pestaña **Ciclo de referidos** y use **Mi ahorro**, **Soy vecino** y **Panel de Andrés** para recorrer la experiencia. Cambie el recibo mensual, calcule el ahorro, registre una solicitud simulada y revise el origen del referido. No escriba datos personales reales: el prototipo no envía información ni agenda visitas. Los clics de demostración se guardan localmente en ese navegador; **Reiniciar demo** los borra.
+
+El ahorro se estima con el promedio del caso (recibo de USD 110 y 70 % de ahorro); no es una lectura de los inversores reales. La recompensa de ejemplo se entrega solo tras una instalación y suma USD 160; con aproximadamente USD 133 de visitas por venta, queda bajo el tope de USD 300. Consulte [`ficha_growth_sesion2.md`](ficha_growth_sesion2.md) para fuentes, unidades, supuestos y diseño del piloto.
+
 ## Caja a 24 meses
 
 La segunda pestaña tiene cuatro planes fijos para comparar:

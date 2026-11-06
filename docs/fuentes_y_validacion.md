@@ -30,3 +30,15 @@ La validación de pantalla en navegador no se completó: el host de navegador CU
 - La comparación de caja usa cuatro planes concretos, no una optimización exhaustiva de todas las inversiones y fechas de contratación.
 - Los saldos futuros son proyecciones condicionadas a las entradas y reglas documentadas.
 - La app publicada es privada. No se publicó una nueva versión con estos documentos de Fase 6.
+
+## Extension de Sesion 2 - prototipo de referidos
+
+- **Fuentes originales:** Sesion 2 / Caso C - Sol de Casa (Parte 1), pp. 3-7; Caso C - Sol de Casa (Parte 2), pp. 2-6; Guia del facilitador, pp. 4-5 (referencia interna). El PDF del caso define los requisitos y prevalece sobre propuestas de la demo.
+- **Datos del caso:** 420 familias; 75% no sabe el ahorro del mes anterior; 40% mostro su recibo; 8% refiere a una familia por ano; embudo web 100 -> 14 -> 6; recibo promedio USD 110; ahorro 70%; conversion referida 95% * 85% * 90% * 45%; USD 60 por visita; tope de USD 300 por venta referida.
+- **Costo de la recompensa:** visitas por venta = (0.95 * 0.85 * 0.90) / (0.95 * 0.85 * 0.90 * 0.45) = 1 / 0.45 ~= 2.22. Costo de visitas ~= USD 133. Ejemplo de recompensa: limpieza USD 60 + descuento USD 100 = USD 160; total ~= USD 293, debajo del tope. Son valores esperados por venta.
+- **Estimacion de la demo:** USD 77/mes = USD 110 * 70%; USD 924/ano; recuperacion simple ~= 7 anos sobre instalacion de USD 6,500. El acumulado usa meses de ejemplo, no datos reales del inversor.
+- **Meta propuesta, no dada por el caso:** al menos un lead referido adicional entre 25 familias con tarjeta frente a 25 controles en 60 dias. La muestra pequena orienta la siguiente prueba, pero no prueba causalidad. Contrametrica: cierre de visitas referidas no menor al 45% del caso.
+- **Revision automatizada:** node scripts/validate_dashboard.cjs paso los controles financieros y el recorrido simulado familia -> vecino -> solicitud -> panel. La inspeccion visual manual no estuvo disponible porque el puente de navegador no conecto en esta sesion.
+- **Error de IA corregido:** el primer borrador redibujaba el campo de meses despues de cada tecla y podia interrumpir la escritura de cifras de dos digitos. Ahora actualiza al terminar la edicion; el validador confirma el calculo renderizado.
+
+El prototipo no se conecta a inversores, WhatsApp, agenda, CRM ni analitica. Las solicitudes y las instalaciones son demostraciones locales y no se envian.

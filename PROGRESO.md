@@ -111,3 +111,13 @@ Skill is valid!
 - [x] Validado el contenido del ZIP y ejecutados los validadores documentados.
 - [ ] Publicar una versión con documentación de Fase 6: pendiente de autorización expresa; el sitio privado vigente corresponde a Fase 5.
 - [ ] Revisión final del usuario: pendiente.
+
+## Extension - Session 2 challenge
+- [x] User requested completion of the Session 2 ZIP work using the existing project and one integrated implementation.
+- [x] Added a third view to the same dashboard: family, neighbor, and owner panel; kept the finance model in place and created no second site.
+- [x] Prepared the growth brief, 90-day plan, reward economics, and 3-minute demo script.
+- [x] Kept case facts separate from the proposed pilot target and simulated events; no inverter, WhatsApp, scheduling, CRM, or real analytics integration.
+- [x] Project validator checked syntax and the family -> neighbor -> simulated request -> owner panel flow; existing unit economics and cash checks passed.
+- [x] Corrected an issue in the first draft: the months field rerendered after each key; it now updates after editing ends.
+- [x] Updated the final package with the prototype and Session 2 documents.
+- [ ] Manual visual browser review unavailable; the browser control bridge did not connect in this session.
